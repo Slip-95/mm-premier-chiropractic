@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M&M Premier Chiropractic in Mesa, AZ — Dr. Mistie Ahrens offers natural, Medicare-friendly chiropractic care to help you live pain-free. Same-day appointments available.">
+    <title>M&M Premier Chiropractic | Mesa, AZ | Dr. Mistie Ahrens</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --primary: #0f766e;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+            background-color: #f8f1e3;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .nav-scrolled {
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            background-color: #f8f1e3;
+        }
+
+        .service-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(15 118 110 / 0.1), 0 8px 10px -6px rgb(15 118 110 / 0.1);
+        }
+
+        .section-header {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #0f766e, #14b8a6);
+            border-radius: 3px;
+        }
+
+        .chiro-bg {
+            background: linear-gradient(135deg, #0f766e 0%, #134e4b 100%);
+        }
+
+        .ripple {
+            animation: ripple 3s ease-in-out infinite;
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .modern-shadow {
+            box-shadow: 0 10px 15px -3px rgb(15 118 110 / 0.1), 0 4px 6px -4px rgb(15 118 110 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-zinc-800">
+    <!-- NAV -->
+    <nav id="navbar" class="bg-white border-b border-zinc-200 sticky top-0 z-50 transition-all">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="logo.png" alt="M&M Premier Chiropractic" class="h-12 w-auto">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#services" class="hover:text-teal-700 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-teal-700 transition-colors">Meet Dr. Mistie</a>
+                    <a href="#why" class="hover:text-teal-700 transition-colors">Why Chiropractic</a>
+                    <a href="#location" class="hover:text-teal-700 transition-colors">Location</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex items-center gap-x-3">
+                    <a href="#location" 
+                       class="px-6 py-2.5 bg-teal-700 hover:bg-teal-800 transition-all text-white text-sm font-semibold rounded-3xl flex items-center gap-x-2 shadow-lg shadow-teal-700/30">
+                        <span>Book Appointment</span>
+                    </a>
+                    
+                    <!-- Mobile Menu -->
+                    <button id="mobile-menu-btn"
+                            class="md:hidden w-10 h-10 flex items-center justify-center text-zinc-700 hover:text-teal-700">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="chiro-bg text-white relative overflow-hidden">
+        <div class="max-w-screen-xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28 relative z-10">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1 rounded-3xl mb-6 border border-white/20">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium tracking-wide">Mesa's Premier Spinal Care Clinic</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-6 heading-serif">
+                    Get Out of Pain.<br>
+                    <span class="text-teal-300">Get Back to Life.</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-white/90 max-w-lg mb-10">
+                    Natural chiropractic care with Dr. Mistie Ahrens. 
+                    Medicare-friendly • Same-day appointments • Car accident specialists.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#location" 
+                       class="group inline-flex items-center justify-center gap-x-3 bg-white text-teal-800 hover:bg-zinc-100 font-semibold px-8 py-4 rounded-3xl text-lg transition-all shadow-xl">
+                        <span>Book Your Visit Today</span>
+                        <i class="fa-solid fa-arrow-right group-active:translate-x-1 transition"></i>
+                    </a>
+                </div>
+                
+                <div class="mt-8 flex items-center gap-x-4 text-sm">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 bg-white/20 rounded-full border border-white/30"></div>
+                        <div class="w-8 h-8 bg-white/20 rounded-full border border-white/30"></div>
+                        <div class="w-8 h-8 bg-white/20 rounded-full border border-white/30"></div>
+                    </div>
+                    <span class="text-white/70">Join 100+ happy patients this month</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-white/5 rounded-full -translate-y-1/3 translate-x-1/3"></div>
+        <div class="absolute top-20 right-10 hidden lg:block">
+            <div class="text-[120px] opacity-10">🔀</div>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <div class="border-b border-zinc-200 bg-white">
+        <div class="max-w-screen-xl mx-auto px-6 py-5">
+            <div class="flex flex-wrap items-center justify-center md:justify-between gap-x-8 gap-y-4 text-sm">
+                <div class="flex items-center gap-x-2 text-teal-700">
+                    <i class="fa-solid fa-check-circle text-xl"></i>
+                    <span class="font-semibold">Medicare Part B Participating Provider</span>
+                </div>
+                <div class="flex items-center gap-x-6 text-zinc-600">
+                    <div class="flex items-center gap-x-1.5">
+                        <i class="fa-solid fa-user-md"></i>
+                        <span class="font-medium">10+ Years Experience</span>
+                    </div>
+                    <div class="flex items-center gap-x-1.5">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="font-medium">Same-Day Appointments</span>
+                    </div>
+                    <div class="flex items-center gap-x-1.5">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="font-medium">Car Accident Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="text-center mb-14">
+            <div class="inline-block px-4 py-1 bg-teal-100 text-teal-700 rounded-3xl text-sm font-semibold mb-4">WHAT WE OFFER</div>
+            <h2 class="text-5xl font-bold tracking-tight heading-serif">Comprehensive Care for<br>Every Stage of Life</h2>
+            <p class="mt-4 max-w-md mx-auto text-lg text-zinc-600">Gentle, effective treatments tailored to your unique needs.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Service 1 -->
+            <div class="service-card bg-white border border-zinc-200 rounded-3xl p-8 modern-shadow">
+                <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-bone text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Spinal Adjustments</h3>
+                <p class="text-zinc-600">Precise, gentle corrections to restore proper alignment, reduce pain, and improve nervous system function.</p>
+                <div class="mt-6 text-sm font-medium text-teal-700 flex items-center gap-x-1">
+                    <span>Most popular service</span> <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card bg-white border border-zinc-200 rounded-3xl p-8 modern-shadow">
+                <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-hand-holding-medical text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Instrument-Assisted Soft Tissue (IASTM)</h3>
+                <p class="text-zinc-600">Advanced technique to break up scar tissue, reduce inflammation, and speed up recovery from injuries.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card bg-white border border-zinc-200 rounded-3xl p-8 modern-shadow">
+                <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-band-aid text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Kinesiology Taping</h3>
+                <p class="text-zinc-600">Supportive taping that promotes healing, reduce pain, and enhances athletic performance and daily movement.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-card bg-white border border-zinc-200 rounded-3xl p-8 modern-shadow">
+                <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-car-crash text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Car Accident Recovery</h3>
+                <p class="text-zinc-600">Specialized care for whiplash, soft tissue injuries, and post-accident pain. We work with insurance and attorneys.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-card bg-white border border-zinc-200 rounded-3xl p-8 modern-shadow">
+                <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-handshake text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Medicare-Friendly Care</h3>
+                <p class="text-zinc-600">Proud participating Medicare Part B provider. We accept assignment so you can focus on healing, not paperwork.</p>
+                <div class="mt-4 text-xs px-3 py-1 bg-emerald-100 text-emerald-700 inline-block rounded-2xl font-medium">Only ~40% of chiropractors accept Medicare</div>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-card bg-white border border-zinc-200 rounded-3xl p-8 modern-shadow">
+                <div class="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-heart-pulse text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-semibold mb-3">Holistic Wellness</h3>
+                <p class="text-zinc-600">Posture correction, ergonomic advice, and lifestyle recommendations to keep you feeling great long-term.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT DR. MISTIE -->
+    <section id="about" class="bg-white py-20 border-y border-zinc-200">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <!-- Left: Photo placeholder + info -->
+                <div class="md:col-span-5">
+                    <div class="relative">
+                        <div class="aspect-[4/3] bg-zinc-200 rounded-3xl overflow-hidden shadow-2xl modern-shadow">
+                            <!-- Placeholder for photo -->
+                            <div class="w-full h-full bg-gradient-to-br from-teal-800 to-teal-950 flex items-center justify-center relative">
+                                <div class="text-center">
+                                    <div class="mx-auto w-28 h-28 bg-white/10 rounded-full flex items-center justify-center mb-4">
+                                        <i class="fa-solid fa-user-md text-white text-6xl opacity-75"></i>
+                                    </div>
+                                    <div class="text-white/70 text-sm font-medium tracking-widest">DR. MISTIE AHRENS, DC</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Badge -->
+                        <div class="absolute -bottom-4 -right-4 bg-white shadow-xl border border-zinc-100 rounded-3xl px-5 py-3 text-center">
+                            <div class="text-3xl font-bold text-teal-700">10</div>
+                            <div class="text-xs text-zinc-500 -mt-1 font-medium">YEARS</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right: Bio -->
+                <div class="md:col-span-7">
+                    <div class="uppercase tracking-[2px] text-sm font-semibold text-teal-700 mb-2">YOUR PARTNER IN PAIN-FREE LIVING</div>
+                    <h2 class="text-5xl font-bold tracking-tight heading-serif mb-6">Hi, I'm Dr. Mistie Ahrens</h2>
+                    
+                    <div class="prose prose-zinc max-w-none text-[15px]">
+                        <p class="text-lg">I opened M&M Premier Chiropractic with one mission: to help you live your best life, free from pain. I believe in the beautiful “ripple effect” of chiropractic care — when you leave feeling amazing, that positivity spreads to everyone around you.</p>
+                        
+                        <p>I’m passionate about offering a natural, non-invasive alternative to pills and surgery. There’s a time and place for everything, but surgery should be the last resort, not the first step.</p>
+                        
+                        <p>After learning that only about 40% of chiropractors participate in Medicare, I made it my mission to welcome Medicare patients with open arms. Everyone deserves access to quality care.</p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-4 text-sm">
+                        <div class="flex items-start gap-x-3">
+                            <i class="fa-solid fa-graduation-cap text-teal-700 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Education</div>
+                                <div class="text-zinc-600">Doctor of Chiropractic<br>Cleveland University – Kansas City</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-x-3">
+                            <i class="fa-solid fa-heart text-teal-700 mt-1"></i>
+                            <div>
+                                <div class="font-semibold">Fun Fact</div>
+                                <div class="text-zinc-600">"Keep It Simple, Sweetie!" is my favorite saying</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#location" class="inline-flex items-center text-sm font-semibold text-teal-700 hover:text-teal-800 group">
+                            LET'S GET YOU FEELING BETTER 
+                            <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fun Facts -->
+            <div class="mt-16 bg-zinc-900 text-white rounded-3xl p-10">
+                <div class="text-center mb-8">
+                    <div class="text-teal-400 text-sm font-semibold tracking-widest">GET TO KNOW ME</div>
+                    <div class="text-3xl font-semibold">A few fun facts about Dr. Mistie</div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 text-sm">
+                    <div>
+                        <div class="flex items-center gap-x-3 mb-3">
+                            <i class="fa-solid fa-chalkboard-teacher text-xl text-teal-400"></i>
+                            <span class="font-semibold">Former Professor</span>
+                        </div>
+                        <p class="text-white/80">I used to teach Anatomy & Physiology at Paradise Valley Community College. Nothing beats inspiring the next generation!</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-x-3 mb-3">
+                            <i class="fa-solid fa-mushroom text-xl text-teal-400"></i>
+                            <span class="font-semibold">Mushroom Lover</span>
+                        </div>
+                        <p class="text-white/80">Mushrooms are always in my fridge — they’re my favorite source of Vitamin D and incredibly versatile in the kitchen.</p>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-x-3 mb-3">
+                            <i class="fa-solid fa-water text-xl text-teal-400"></i>
+                            <span class="font-semibold">Wild Adventure</span>
+                        </div>
+                        <p class="text-white/80">I once swam in the Atlantic Ocean with my son surrounded by wild sharks. It was absolutely amazing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="text-teal-700 text-sm font-semibold tracking-widest mb-3">REAL STORIES</div>
+            <h2 class="text-4xl font-bold tracking-tight mb-10 heading-serif">What patients are saying</h2>
+            
+            <div class="bg-white border border-zinc-200 rounded-3xl p-12 modern-shadow relative">
+                <i class="fa-solid fa-quote-left text-6xl text-teal-100 absolute top-8 left-8"></i>
+                
+                <div class="text-2xl leading-tight font-light text-zinc-700">
+                    “The BEST chiropractor ever! Dr. Mistie is the only doctor who has ever adjusted my wrists and ankles before and it has changed my life. No more pain working on my computer, and my back feels better because my ankles/feet are working correctly. Truly an incredible place, staff, and professional experience! 10/10 recommend.”
+                </div>
+                
+                <div class="mt-8 flex items-center justify-center gap-x-4">
+                    <div class="text-left">
+                        <div class="font-semibold">Sadye Auren</div>
+                        <div class="text-sm text-zinc-500">Patient since 2023</div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="mt-6 text-sm text-zinc-500">We’d love to add <span class="font-semibold">your</span> story next. Come see us!</p>
+        </div>
+    </section>
+
+    <!-- WHY CHIROPRACTIC -->
+    <section id="why" class="bg-zinc-900 text-white py-20">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7">
+                    <div class="uppercase tracking-[2px] text-teal-400 text-sm font-semibold mb-3">THE SCIENCE BEHIND THE CARE</div>
+                    <h2 class="text-5xl font-bold tracking-tight heading-serif mb-6">Why Chiropractic Works</h2>
+                    
+                    <div class="space-y-6 text-lg text-white/90 max-w-prose">
+                        <p>Chiropractic care is a natural, non-invasive way to boost your health by focusing on spinal wellness. We use precise spinal adjustments to correct misalignments so your body can heal itself and function at its best.</p>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-check text-teal-400 mt-1.5"></i>
+                                <div>Back pain & sciatica relief</div>
+                            </div>
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-check text-teal-400 mt-1.5"></i>
+                                <div>Headaches & migraines</div>
+                            </div>
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-check text-teal-400 mt-1.5"></i>
+                                <div>Whiplash & car accident injuries</div>
+                            </div>
+                            <div class="flex gap-x-3">
+                                <i class="fa-solid fa-check text-teal-400 mt-1.5"></i>
+                                <div>TMJ, carpal tunnel & more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-5 bg-zinc-800 rounded-3xl p-8 text-sm border border-white/10">
+                    <div class="font-semibold mb-4 text-teal-400">RESEARCH-BACKED RESULTS</div>
+                    <div class="space-y-5">
+                        <div>
+                            <div class="font-mono text-3xl font-semibold text-white">57%</div>
+                            <div class="text-white/70 text-sm">better function after chiropractic care (JAMA 2018)</div>
+                        </div>
+                        <div>
+                            <div class="font-mono text-3xl font-semibold text-white">10-30%</div>
+                            <div class="text-white/70 text-sm">reduction in pain (PMC 2022)</div>
+                        </div>
+                        <div>
+                            <div class="font-mono text-3xl font-semibold text-white">Up to 20%</div>
+                            <div class="text-white/70 text-sm">pain relief (JAMA 2017)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="max-w-screen-xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Map -->
+            <div>
+                <div class="aspect-video bg-zinc-200 rounded-3xl overflow-hidden relative modern-shadow">
+                    <iframe 
+                        src="https://www.google.com/maps?q=6955+East+Baseline+Road,+Suite+103,+Mesa,+AZ+85209&output=embed" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-transparent pointer-events-none"></div>
+                    <div class="absolute bottom-4 left-4 bg-white/95 px-4 py-2 rounded-2xl text-sm font-medium shadow flex items-center gap-x-2">
+                        <i class="fa-solid fa-map-marker-alt text-red-500"></i>
+                        <span>6955 E Baseline Rd, Ste 103</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Info -->
+            <div>
+                <div class="uppercase tracking-[1.5px] text-xs font-semibold text-teal-700">MESA, ARIZONA</div>
+                <h2 class="text-5xl font-bold tracking-tighter heading-serif mt-2 mb-8">Come Visit Us</h2>
+                
+                <div class="space-y-8 text-[15px]">
+                    <div>
+                        <div class="font-semibold flex items-center gap-x-2 mb-1">
+                            <i class="fa-solid fa-map-marker-alt w-4 text-teal-700"></i> 
+                            ADDRESS
+                        </div>
+                        <div class="pl-6 text-zinc-600">
+                            6955 East Baseline Road, Suite 103<br>
+                            Mesa, AZ 85209<br>
+                            <span class="text-xs">(Corner of Baseline & Roslyn — next to Sonic, south side)</span>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="font-semibold flex items-center gap-x-2 mb-1">
+                            <i class="fa-solid fa-clock w-4 text-teal-700"></i> 
+                            HOURS
+                        </div>
+                        <div class="pl-6 text-zinc-600 space-y-1">
+                            <div><span class="font-medium">Monday – Thursday:</span> By appointment (same-day available)</div>
+                            <div><span class="font-medium">Friday – Sunday:</span> Closed (flexible appointments available)</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="font-semibold flex items-center gap-x-2 mb-1">
+                            <i class="fa-solid fa-phone w-4 text-teal-700"></i> 
+                            CONTACT
+                        </div>
+                        <div class="pl-6">
+                            <a href="tel:4805242318" class="block font-semibold text-xl hover:text-teal-700 transition">(480) 524-2318</a>
+                            <a href="mailto:contact@mmpremierchiro.com" class="text-sm text-zinc-600 hover:text-teal-700">contact@mmpremierchiro.com</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-10">
+                    <a href="tel:4805242318" 
+                       class="inline-flex w-full md:w-auto justify-center items-center gap-x-3 bg-teal-700 hover:bg-teal-800 transition text-white font-semibold px-10 py-4 rounded-3xl text-lg">
+                        <i class="fa-solid fa-phone mr-2"></i> Call or Text to Book
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-zinc-950 text-white/70 text-sm py-12">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between gap-y-8">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-4">
+                        <div class="w-9 h-9 bg-white/10 rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-spa text-white"></i>
+                        </div>
+                        <div class="font-bold text-xl text-white">M&M Premier Chiropractic</div>
+                    </div>
+                    <div>© 2026 Dr. Mistie Ahrens, DC. All rights reserved.</div>
+                    <div class="mt-1 text-xs">Mesa, Arizona • Medicare Part B Provider</div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-x-10 gap-y-6 text-sm">
+                    <div>
+                        <div class="font-semibold text-white mb-2">Quick Links</div>
+                        <div class="space-y-1">
+                            <a href="#services" class="block hover:text-white transition">Services</a>
+                            <a href="#about" class="block hover:text-white transition">Meet Dr. Mistie</a>
+                            <a href="#why" class="block hover:text-white transition">Why Chiropractic</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white mb-2">Contact</div>
+                        <div class="space-y-1">
+                            <a href="tel:4805242318" class="block hover:text-white transition">(480) 524-2318</a>
+                            <a href="mailto:contact@mmpremierchiro.com" class="block hover:text-white transition">contact@mmpremierchiro.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 pt-8 border-t border-white/10 text-center text-xs">
+                Professional website for M&M Premier Chiropractic • Mesa, AZ
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        function initNavbar() {
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('nav-scrolled', 'bg-white/95', 'backdrop-blur-lg');
+                } else {
+                    navbar.classList.remove('nav-scrolled', 'bg-white/95', 'backdrop-blur-lg');
+                }
+            });
+        }
+        
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            btn.addEventListener('click', () => {
+                const menu = document.createElement('div');
+                menu.className = 'fixed inset-0 bg-black/90 z-[60] flex flex-col p-6 text-white';
+                menu.innerHTML = `
+                    <div class="flex justify-end">
+                        <button class="text-3xl">&times;</button>
+                    </div>
+                    <div class="flex flex-col text-2xl gap-y-6 mt-12 font-medium px-4">
+                        <a href="#services" class="py-2">Services</a>
+                        <a href="#about" class="py-2">Meet Dr. Mistie</a>
+                        <a href="#why" class="py-2">Why Chiropractic</a>
+                        <a href="#location" class="py-2">Location</a>
+                        <a href="#location" class="mt-4 bg-white text-black px-8 py-4 rounded-3xl text-center font-semibold">Book Appointment</a>
+                    </div>
+                `;
+                document.body.appendChild(menu);
+                
+                menu.querySelector('button').onclick = () => menu.remove();
+                menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.remove());
+            });
+        }
+        
+        // Smooth scroll for anchor links
+        function initSmoothScroll() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        e.preventDefault();
+                        const offset = 80;
+                        const bodyRect = document.body.getBoundingClientRect().top;
+                        const elementPosition = target.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition - bodyRect - offset;
+                        
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+        
+        // Initialize everything
+        function init() {
+            initNavbar();
+            initMobileMenu();
+            initSmoothScroll();
+            
+            // Easter egg: clicking logo scrolls to top
+            const logo = document.querySelector('img[alt*="Premier Chiropractic"]');
+            if (logo) {
+                logo.parentElement.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            console.log('%c[M&M Premier] Modern site initialized successfully', 'color:#14b8a6');
+        }
+        
+        window.onload = init;
+    </script>
+</body>
+</html>
