@@ -212,7 +212,7 @@
                     <i class="fa-solid fa-band-aid text-3xl"></i>
                 </div>
                 <h3 class="text-2xl font-semibold mb-3">Kinesiology Taping</h3>
-                <p class="text-zinc-600">Supportive taping that promotes healing, reduce pain, and enhances athletic performance and daily movement.</p>
+                <p class="text-zinc-600">Supportive taping that promotes healing, reduces pain, and enhances athletic performance and daily movement.</p>
             </div>
 
             <!-- Service 4 -->
@@ -533,7 +533,10 @@
     </footer>
 
     <script>
-        // Navbar scroll effect
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#0f766e');
+        }
+        
         function initNavbar() {
             const navbar = document.getElementById('navbar');
             window.addEventListener('scroll', () => {
@@ -545,7 +548,6 @@
             });
         }
         
-        // Mobile menu
         function initMobileMenu() {
             const btn = document.getElementById('mobile-menu-btn');
             btn.addEventListener('click', () => {
@@ -570,7 +572,6 @@
             });
         }
         
-        // Smooth scroll for anchor links
         function initSmoothScroll() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
@@ -591,13 +592,12 @@
             });
         }
         
-        // Initialize everything
         function init() {
+            initializeTailwind();
             initNavbar();
             initMobileMenu();
             initSmoothScroll();
             
-            // Easter egg: clicking logo scrolls to top
             const logo = document.querySelector('img[alt*="Premier Chiropractic"]');
             if (logo) {
                 logo.parentElement.addEventListener('click', () => {
